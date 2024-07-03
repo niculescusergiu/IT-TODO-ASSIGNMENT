@@ -76,6 +76,16 @@ public class ToDoItem {
         this.done = done;
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
     public void setCreator(Person creator) {
         this.creator = creator;
     }
@@ -84,9 +94,13 @@ public class ToDoItem {
         return LocalDate.now().isAfter(deadLine);
     }
     //Summary
-    public String getSummary() {
-        return String.format(
-                "{id: %d, title: %s, description: %s, deadline: %s, done: %b, creator: %s}",
-                id, title, taskDescription, deadLine, done, creator.getSummary());
+    public String toString() {
+       return "TodoItem{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", taskDescription='" + taskDescription + '\'' +
+                ", deadLine=" + deadLine +
+                ", done=" + done +
+                '}';
     }
 }

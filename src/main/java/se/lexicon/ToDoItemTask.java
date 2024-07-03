@@ -32,6 +32,17 @@ public class ToDoItemTask {
     public Person getAssignee() {
         return assignee;
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
     //Setters
     public void setAssigned(boolean assigned) {
         this.assigned = assigned;
@@ -51,9 +62,11 @@ public class ToDoItemTask {
         this.assigned = (assignee != null);
     }
     //Summary
-    public String getSummary() {
-        return String.format(
-                "{id: %d, assigned: %b, todoItem: %s, assignee: %s}",
-                id, assigned, ToDoItem.getSummary(), assignee != null ? assignee.getSummary() : "None");
+    public String toString() {
+        return "TodoItemTask{" +
+                "todoItem=" + ToDoItem +
+                ", assigned=" + assigned +
+                ", id=" + id +
+                '}';
     }
 }

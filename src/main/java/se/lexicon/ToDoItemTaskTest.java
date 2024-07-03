@@ -9,6 +9,8 @@ public class ToDoItemTaskTest {
     public static void testToDoItemTask() {
         // Create a ToDoItemTask with basic data
         ToDoItemTask task1 = new ToDoItemTask(1, "Finish homework", "John Doe");
+        AppRole user = AppRole.ROLE_APP_USER;
+        AppRole admin = AppRole.ROLE_APP_ADMIN;
 
         // Test getters
         System.out.println("ID: " + task1.getId());
@@ -84,5 +86,9 @@ public class ToDoItemTaskTest {
                     "{id: %d, assigned: %b, todoItem: %s, assignee: %s}",
                     id, assigned, toDoItem, assignee != null ? assignee : "None");
         }
+    }
+    enum AppRole{
+        ROLE_APP_USER,
+        ROLE_APP_ADMIN
     }
 }
