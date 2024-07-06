@@ -38,7 +38,7 @@ public class App
         // Create another person object
         Person julian = new Person(2, "Nicolae", "Niculescu", "nicolaeniculescu@gmail.com");
         // Assign credentials to the new person
-        credentials = new AppUser("julian.assange", "password123", user);
+        credentials = new AppUser("nicolae.niculescu", "nicolae123", user);
         julian.setCredentials(credentials);
 
         // Create another todoItem object and assign it to the same person
