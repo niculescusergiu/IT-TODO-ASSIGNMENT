@@ -36,10 +36,10 @@ public class App
         System.out.println(todoItemTask);
 
         // Create another person object
-        Person julian = new Person(2, "Nicolae", "Niculescu", "nicolaeniculescu@gmail.com");
+        Person nicolae = new Person(2, "Nicolae", "Niculescu", "nicolaeniculescu@gmail.com");
         // Assign credentials to the new person
         credentials = new AppUser("nicolae.niculescu", "nicolae123", user);
-        julian.setCredentials(credentials);
+        nicolae.setCredentials(credentials);
 
         // Create another todoItem object and assign it to the same person
         ToDoItem todoItem2 = new ToDoItem(1, "Todo-IT Workshop","workshop test", LocalDate.of(2024,07,20), false, sergiu);
