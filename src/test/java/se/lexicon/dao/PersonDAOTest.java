@@ -1,7 +1,8 @@
-package se.lexicon;
+package se.lexicon.dao;
 
-import se.lexicon.dao.PersonDAO;
-import se.lexicon.dao.PersonDAOCollection;
+import se.lexicon.Person;
+import se.lexicon.dao.interfaces.PersonDAO;
+import se.lexicon.dao.collections.PersonDAOCollection;
 
 public class PersonDAOTest {
     public static void main(String[] args) {

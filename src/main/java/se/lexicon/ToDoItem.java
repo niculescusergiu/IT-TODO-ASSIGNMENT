@@ -103,4 +103,9 @@ public class ToDoItem {
                 ", done=" + done +
                 '}';
     }
+
+    public int getCreatorId() {
+        return 0;
+    }
+
 }

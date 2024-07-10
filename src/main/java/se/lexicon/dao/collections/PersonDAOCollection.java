@@ -1,6 +1,8 @@
-package se.lexicon.dao;
+package se.lexicon.dao.collections;
 
 import se.lexicon.Person;
+import se.lexicon.dao.interfaces.PersonDAO;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;

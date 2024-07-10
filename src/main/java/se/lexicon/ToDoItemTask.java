@@ -29,6 +29,10 @@ public class ToDoItemTask {
         return ToDoItem;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public Person getAssignee() {
         return assignee;
     }
@@ -69,4 +73,6 @@ public class ToDoItemTask {
                 ", id=" + id +
                 '}';
     }
+
+
 }

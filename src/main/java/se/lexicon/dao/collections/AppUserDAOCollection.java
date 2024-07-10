@@ -1,6 +1,7 @@
-package se.lexicon.dao;
+package se.lexicon.dao.collections;
 
 import se.lexicon.AppUser;
+import se.lexicon.dao.interfaces.AppUserDAO;
 
 import java.util.ArrayList;
 import java.util.Collection;
