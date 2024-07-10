@@ -77,7 +77,6 @@ public class Person {
         }
         this.email = email;
     }
-//Logic behind the calling of person.getSummary() in the app which combines and types out in terminal all fields combined
     public String toString() {
         return "Person{" +
                 "id: " + id +

@@ -12,7 +12,7 @@ public class App
         AppRole user = AppRole.ROLE_APP_USER;
         AppRole admin = AppRole.ROLE_APP_ADMIN;
         // Create an AppUser object
-        AppUser credentials = new AppUser("sergiu.niculescu", "sergiu123", admin);
+        AppUser credentials = new AppUser("sergiu.niculescu", "sergiu123");
         // Create a Person object
         Person sergiu = new Person(1, "Sergiu", "Niculescu", "niculescusergiu00@gmail.com");
         // Set the credentials for the person
@@ -38,7 +38,7 @@ public class App
         // Create another person object
         Person nicolae = new Person(2, "Nicolae", "Niculescu", "nicolaeniculescu@gmail.com");
         // Assign credentials to the new person
-        credentials = new AppUser("nicolae.niculescu", "nicolae123", user);
+        credentials = new AppUser("nicolae.niculescu", "nicolae123");
         nicolae.setCredentials(credentials);
 
         // Create another todoItem object and assign it to the same person
