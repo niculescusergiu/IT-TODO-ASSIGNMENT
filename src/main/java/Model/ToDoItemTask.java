@@ -1,4 +1,4 @@
-package se.lexicon;
+package Model;
 
 public class ToDoItemTask {
     //Fields
@@ -7,7 +7,7 @@ public class ToDoItemTask {
     private ToDoItem ToDoItem;
     private Person assignee;
 //Constructor
-    public ToDoItemTask(int id, se.lexicon.ToDoItem toDoItem, Person assignee) {
+    public ToDoItemTask(int id, Model.ToDoItem toDoItem, Person assignee) {
         if (toDoItem == null) {
     throw new IllegalArgumentException("TodoItem cannot be null");
         }
@@ -52,7 +52,7 @@ public class ToDoItemTask {
         this.assigned = assigned;
     }
 
-    public void setToDoItem(se.lexicon.ToDoItem toDoItem) {
+    public void setToDoItem(Model.ToDoItem toDoItem) {
         if (toDoItem == null) {
             throw new IllegalArgumentException("TodoItem cannot be null");
         }

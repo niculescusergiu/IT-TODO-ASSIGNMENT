@@ -1,5 +1,8 @@
 package se.lexicon;
 
+import Model.Person;
+import Model.ToDoItem;
+
 import java.time.LocalDate;
 public class ToDoItemTest {
     public static void main(String[] args) {

@@ -1,14 +1,14 @@
 package se.lexicon.dao;
 
-import se.lexicon.AppUser;
+import Model.AppUser;
 import se.lexicon.dao.interfaces.AppUserDAO;
-import se.lexicon.dao.collections.AppUserDAOCollection;
+import se.lexicon.dao.implementations.AppUserDAOImpl;
 
 import java.util.Collection;
 
 public class AppUserDAOTest {
     public static void main(String[] args) {
-        AppUserDAO appUserDAO = new AppUserDAOCollection();
+        AppUserDAO appUserDAO = new AppUserDAOImpl();
 
         appUserDAO.persist(new AppUser("sergiu", "password1"));
         appUserDAO.persist(new AppUser("nicolae", "password2"));

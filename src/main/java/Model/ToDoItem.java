@@ -1,4 +1,4 @@
-package se.lexicon;
+package Model;
 
 import java.time.LocalDate;
 
@@ -9,9 +9,9 @@ public class ToDoItem {
     private String taskDescription;
     private LocalDate deadLine;
     private boolean done;
-    private Person creator;
+    private int creator;
 //Constructor not allowing input to be null for deadline and ToDoItem
-    public ToDoItem(int id, String title, String taskDescription, LocalDate deadLine, boolean done, Person creator) {
+    public ToDoItem(int id, String title, String taskDescription, LocalDate deadLine, boolean done, int creator) {
         if (title == null || title.isEmpty()) {
             throw new IllegalArgumentException("Title cannot be null or empty.");
         }
@@ -46,7 +46,7 @@ public class ToDoItem {
         return done;
     }
 
-    public Person getCreator() {
+    public int getCreator() {
         return creator;
     }
 //Setters
@@ -87,7 +87,7 @@ public class ToDoItem {
     }
 
     public void setCreator(Person creator) {
-        this.creator = creator;
+        this.creator = creator.getId();
     }
     //isOverdue
     public boolean isOverdue() {

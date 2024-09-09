@@ -1,6 +1,6 @@
 package se.lexicon.dao.interfaces;
 
-import se.lexicon.AppUser;
+import Model.AppUser;
 
 import java.util.Collection;
 

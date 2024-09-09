@@ -1,4 +1,4 @@
-package se.lexicon;
+package Model;
 
 public class AppUser {
     private String username;

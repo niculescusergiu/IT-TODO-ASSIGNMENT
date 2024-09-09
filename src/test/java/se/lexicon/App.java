@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import Model.*;
+
 import java.time.LocalDate;
 
 /**

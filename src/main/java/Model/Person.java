@@ -1,4 +1,4 @@
-package se.lexicon;
+package Model;
 
 import java.util.Objects;
 
@@ -19,9 +19,27 @@ public class Person {
         this.lastName = lastName;
         this.email = email;
     }
-//Getters that pull the information declared in the application
+
+    public Person(int id, AppUser credentials, String email, String lastName, String firstName) {
+        this.id = id;
+        this.credentials = credentials;
+        this.email = email;
+        this.lastName = lastName;
+        this.firstName = firstName;
+    }
+
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    //Getters that pull the information declared in the application
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public AppUser getCredentials() {

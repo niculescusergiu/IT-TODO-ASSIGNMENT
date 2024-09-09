@@ -1,15 +1,15 @@
-package se.lexicon.dao.collections;
+package se.lexicon.dao.implementations;
 
-import se.lexicon.AppUser;
+import Model.AppUser;
 import se.lexicon.dao.interfaces.AppUserDAO;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class AppUserDAOCollection implements AppUserDAO {
+public class AppUserDAOImpl implements AppUserDAO {
     private Collection<AppUser> appUsers;
 
-    public AppUserDAOCollection() {
+    public AppUserDAOImpl() {
         this.appUsers = new ArrayList<>();
     }
     @Override

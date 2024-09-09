@@ -1,7 +1,7 @@
 package se.lexicon.dao.interfaces;
 
 
-import se.lexicon.ToDoItemTask;
+import Model.ToDoItemTask;
 
 import java.util.ArrayList;
 

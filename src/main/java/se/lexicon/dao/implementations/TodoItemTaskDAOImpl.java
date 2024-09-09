@@ -1,13 +1,12 @@
-package se.lexicon.dao.collections;
+package se.lexicon.dao.implementations;
 
-import se.lexicon.ToDoItemTask;
+import Model.ToDoItemTask;
 import se.lexicon.dao.interfaces.TodoItemTaskDAO;
-import se.lexicon.dao.sequencers.TodoItemSequencer;
 import se.lexicon.dao.sequencers.TodoItemTaskSequencer;
 
 import java.util.ArrayList;
 
-public class TodoItemTaskDAOCollection implements TodoItemTaskDAO {
+public class TodoItemTaskDAOImpl implements TodoItemTaskDAO {
     ArrayList<ToDoItemTask> todoItemTasks;
 
     public void ToDoItemTaskDAO() {
